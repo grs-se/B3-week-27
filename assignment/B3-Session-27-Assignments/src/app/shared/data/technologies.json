@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Angular",
+    "description": "A platform for building mobile and desktop web applications.",
+    "image": "https://angular.io/assets/images/logos/angular/angular.svg",
+    "url": "https://angular.io/",
+    "categoryId": "1",
+    "subCategoryId": "1",
+    "icon": "devicon-angular-plain"
+  },
+  {
+    "id": "2",
+    "name": "React",
+    "description": "A JavaScript library for building user interfaces.",
+    "image": "https://reactjs.org/logo-og.png",
+    "url": "https://reactjs.org/",
+    "categoryId": "1",
+    "subCategoryId": "1",
+    "icon": "devicon-react-original"
+  },
+  {
+    "id": "3",
+    "name": "Vue.js",
+    "description": "The Progressive JavaScript Framework.",
+    "image": "https://vuejs.org/images/logo.png",
+    "url": "https://vuejs.org/",
+    "categoryId": "1",
+    "subCategoryId": "1",
+    "icon": "devicon-vuejs-plain"
+  },
+  {
+    "id": "4",
+    "name": "Node.js",
+    "description": "JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    "image": "https://nodejs.org/static/images/logo.svg",
+    "url": "https://nodejs.org/",
+    "categoryId": "2",
+    "subCategoryId": "3",
+    "icon": "devicon-nodejs-plain"
+  },
+  {
+    "id": "5",
+    "name": "Spring Boot",
+    "description": "A framework that simplifies the development of Java applications.",
+    "image": "https://spring.io/images/spring-boot.svg",
+    "url": "https://spring.io/projects/spring-boot",
+    "categoryId": "2",
+    "subCategoryId": "1",
+    "icon": "devicon-spring-plain"
+  }
+]

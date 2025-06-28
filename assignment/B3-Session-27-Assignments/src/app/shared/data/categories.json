@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Frontend",
+    "description": "Technologies used for building the client-side of web applications.",
+    "icon": "devicon-frontend-plain"
+  },
+  {
+    "id": "2",
+    "name": "Backend",
+    "description": "Technologies used for building the server-side of web applications.",
+    "icon": "devicon-backend-plain"
+  },
+  {
+    "id": "3",
+    "name": "Database",
+    "description": "Technologies used for managing and storing data.",
+    "icon": "devicon-database-plain"
+  },
+  {
+    "id": "4",
+    "name": "DevOps",
+    "description": "Tools and practices for automating and improving the software development process.",
+    "icon": "devicon-devops-plain"
+  },
+  {
+    "id": "5",
+    "name": "Cloud",
+    "description": "Technologies for cloud computing and services.",
+    "icon": "devicon-cloud-plain"
+  }
+]

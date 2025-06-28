@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <section id="technologies" class="container">
+        <header class="section-header">
+            <h2 class="heading">Technologies</h2>
+        </header>
+        <ul>
+            @if (categories.length > 0) {
+            @for(category of categories; track category.id) {
+            <li class="technology-card">
+                <article>
+                    <h3 class="heading">{{category.name}}</h3>
+                    <p>
+                        {{category.description}}
+                    </p>
+                    <ul>
+                        @if (technologies.length > 0) {
+                        @for(technology of technologies; track technology.id) {
+                        @if (technology.categoryId === category.id) {
+                        <li>
+                            <i [ngClass]="['colored', technology.icon]"></i>
+                            <span>{{technology.name}}</span>
+                        </li>
+                        }
+                        }
+                        }
+                    </ul>
+                </article>
+            </li>
+            }
+            }
+            @else {
+            <li class="technology-card">
+                <article>
+                    <h3 class="heading">No technologies available</h3>
+                    <p>
+                        No technologies available at the moment.
+                    </p>
+                </article>
+            </li>
+            }
+        </ul>
+    </section>
+</div>

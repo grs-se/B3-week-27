@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Framework",
+    "description": "A platform for building applications.",
+    "icon": "devicon-framework-plain"
+  },
+  {
+    "id": "2",
+    "name": "Library",
+    "description": "A collection of pre-written code that can be used to perform common tasks.",
+    "icon": "devicon-library-plain"
+  },
+  {
+    "id": "3",
+    "name": "Runtime",
+    "description": "An environment in which a program or application runs.",
+    "icon": "devicon-runtime-plain"
+  },
+  {
+    "id": "4",
+    "name": "Database",
+    "description": "A structured set of data held in a computer.",
+    "icon": "devicon-database-plain"
+  },
+  {
+    "id": "5",
+    "name": "Tool",
+    "description": "A software application that helps developers build, test, and maintain software.",
+    "icon": "devicon-tool-plain"
+  }
+]

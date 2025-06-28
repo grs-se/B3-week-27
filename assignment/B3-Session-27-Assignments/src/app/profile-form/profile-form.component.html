@@ -1,0 +1,80 @@
+<div class="wrapper bg-white">
+    <section id="user-profile-form" class="container">
+        <header class="section-header">
+            <h2 class="heading">User Profile Form</h2>
+            <p>
+                Please input your user details. <br>
+                <br>
+            </p>
+        </header>
+        <form action="https://formspree.io/f/sdaereew2" id="cta-form" method="POST" class="user-profile-form">
+            <fieldset class="form-left">
+                <legend>User Details</legend>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input name="name" type="text" class="form-control" id="full-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for=" email">Email</label>
+                    <input name="email" ngModel placeholder="Enter your email">
+                </div>
+            </fieldset>
+            <fieldset class="form-right">
+                <fieldset class="cta-services-checkbox-group form-group">
+                    <legend>User Image</legend>
+                    <div>
+                        @if (visibility.showUserImg) {
+                        <img [src]="user.profilePicture" [alt]="user.name" class="user-image">
+                        }
+                    </div>
+                    <div>
+                        <button (click)="toggleVisibility('showUserImg')">Toggle Image</button>
+                    </div>
+
+                </fieldset>
+                <div class="spacing"></div>
+                <button type="submit" class="btn">
+                    Send
+                </button>
+            </fieldset>
+            @if (state.isSubmitted) {
+            <p>Form submitted successfully!</p>
+            }
+
+            @if (state.isError) {
+            <p>{{ state.errorMessage }}</p>
+            }
+
+            @if (user.name && user.email) {
+            <p>
+                Name: {{ user.name }}<br>
+                Email: {{ user.email }}
+            </p>
+            }
+
+            @if (!user.name && !user.email) {
+            <p>No data entered.</p>
+            }
+
+            @if (!state.isSubmitted && !state.isError) {
+            <p>Please fill out the form.</p>
+            }
+
+            @if (state.isSubmitted && state.isError) {
+            <p>Error occurred: {{ state.errorMessage }}</p>
+            }
+
+
+            @if (!state.isSubmitted && state.isError) {
+            <p>Error occurred: {{ state.errorMessage }}</p>
+            }
+
+            @if (state.isSubmitted && !state.isError) {
+            <p>Form submitted successfully!</p>
+            }
+            @if (!state.isSubmitted && !state.isError) {
+            <p>Please fill out the form.</p>
+            }
+        </form>
+    </section>
+</div>
